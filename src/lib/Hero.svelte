@@ -1,0 +1,56 @@
+<section class="hero">
+    <video class="hero-background" autoplay muted loop>
+        <source src="/hero-background.mp4" type="video/mp4">
+        <track kind="captions"/>
+    </video>
+
+    <div class="hero-title">
+        <img src="/images/wipe.png" alt="Logo de Full Wipe">
+        <h1>Full Wipe</h1>
+        <h2>Limpieza Integral y Mantenimiento</h2>
+    </div>
+</section>
+
+<style>
+  .hero {
+    max-width:100vw;
+    max-height:90vh;
+    background-color: #333;
+  }
+
+  .hero-title {
+    height:92vh;
+    position: relative;
+    z-index:5;
+    color:#000;
+    text-shadow: 0 0 2px rgb(87,114,255);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    font-size:4.2rem;
+  }
+
+  h2 {
+    font-size:2.5rem;
+    font-weight:500;
+  }
+
+  img {
+    height:12rem;
+    padding: 0 0 7vh;
+  }
+
+  .hero-background {
+    position:absolute;
+    max-height:92vh;
+    min-height:92vh;
+    width:100vw;
+    object-fit: cover;
+    filter: brightness(0.8);
+  }
+</style>
