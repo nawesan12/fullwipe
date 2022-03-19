@@ -9,7 +9,7 @@
 <section id="services">
     <header>
         <h2>NUESTROS SERVICIOS</h2>
-        <p>Ambient Argentina S.R.L es la empresa líder en la realización de servicios de limpieza en los siguientes rubros:</p>
+        <p>Full Wipe es la empresa líder en la realización de servicios de limpieza en los siguientes rubros</p>
     </header>
     <section class="services-container">
         <article class="item">
@@ -84,12 +84,20 @@
     #services {
         height:105vh;
         max-width:100vw;
-        background: #f5f5f5;
+        background: url('/background_lines.svg') no-repeat center center fixed;
         display:flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         text-align: center;
+    }
+
+    header h2 {
+        font-size:2rem;
+    }
+
+    header p {
+        font-size:1.2rem;
     }
 
     .services-container {
@@ -105,12 +113,20 @@
         flex-direction: column;
         justify-content: space-evenly;
         margin:1.3rem;
-        border-bottom: 1px inset #ddd;
+    }
+
+    .item h2 {
+        font-size:1.5rem;
+        font-weight:600;
+        color:#000;
+        background:#f5f5f5;
+        border-radius: .8rem;
     }
 
     .item img {
         width:100%;
         object-fit: cover;
+        border-radius: .5rem;
     }
 
     .description-overlay {
@@ -122,9 +138,10 @@
         opacity:0;
         transition: all .5s ease;
         font-size:1.1rem;
-        padding:.5rem;
+        padding:.6rem;
         display:grid;
         place-items: center;
+        border-radius: .8rem;
     }
 
     .description-overlay p {
