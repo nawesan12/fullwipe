@@ -53,4 +53,11 @@
     object-fit: cover;
     filter: brightness(0.8);
   }
+
+  @media screen and (max-width:1200px) {
+    .hero-title {
+      margin-bottom:4rem;
+      text-shadow: 0 0 2px rgb(255,255,255);
+    }
+  }
 </style>

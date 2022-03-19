@@ -1,5 +1,9 @@
 <script>
+    let navActive = false;
 
+    function toggleNav() {
+        navActive = !navActive;
+    }
 </script>
 
 <header class="app_header">
@@ -9,7 +13,7 @@
         </div>
     </section>
 
-    <nav class="navigation">
+    <nav class={navActive === true ? "navigation active" : "navigation"}>
         <ul>
             <li><a href="#hero">Inicio</a></li>
             <li><a href="#services">Servicios</a></li>
@@ -31,9 +35,7 @@
         </section>
     </nav>
 
-    
-
-    <button class="burger">
+    <button class="burger" on:click={toggleNav}>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <line x1="4" y1="6" x2="20" y2="6" />
@@ -42,14 +44,6 @@
         </svg>
     </button>
 </header>
-
-<main>
-    <slot></slot>
-</main>
-
-<footer class="app_footer">
-
-</footer>
 
 <style>
     @keyframes hoverItemUnderlined {
@@ -152,7 +146,7 @@
         }
 
         .content {
-            margin-left: 2rem;
+            margin-left: 3rem;
         }
 
         .burger {
@@ -162,13 +156,35 @@
 
         .navigation {
             position:fixed;
+            z-index:7;
             top:12vh;
             left:0;
-            display:block;
+            display:flex;
+            height:88vh;
+            width:75vw;
+            background:#f5f5f5;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            transition: all .2s ease;
+            transform: translateX(-120%);
+        }
+
+        .active {
+            transform: translateX(0);
         }
 
         ul {
             flex-direction: column;
+        }
+
+        li {
+            margin: .8rem 0;
+            font-size: 1.25rem;
+        }
+
+        .number {
+            font-size:1.4rem;
         }
     }
 </style>

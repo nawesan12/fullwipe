@@ -1,0 +1,1 @@
+<section id="responsabilities"></section>
