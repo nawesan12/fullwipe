@@ -1,7 +1,62 @@
 <section id="responsabilities">
-    <div class="container">
-
-    </div>
+    <section class="container">
+        <article class="item">
+            <div class="logo">
+                <svg></svg>
+                <h4></h4>
+            </div>
+            <p></p>
+        </article>
+        <article class="item">
+            <div class="logo">
+                <svg></svg>
+                <h4></h4>
+            </div>
+            <p></p>
+        </article>
+        <article class="item">
+            <div class="logo">
+                <svg></svg>
+                <h4></h4>
+            </div>
+            <p></p>
+        </article>
+        <article class="item">
+            <div class="logo">
+                <svg></svg>
+                <h4></h4>
+            </div>
+            <p></p>
+        </article>
+        <article class="item">
+            <div class="logo">
+                <svg></svg>
+                <h4></h4>
+            </div>
+            <p></p>
+        </article>
+        <article class="item">
+            <div class="logo">
+                <svg></svg>
+                <h4></h4>
+            </div>
+            <p></p>
+        </article>
+        <article class="item">
+            <div class="logo">
+                <svg></svg>
+                <h4></h4>
+            </div>
+            <p></p>
+        </article>
+        <article class="item">
+            <div class="logo">
+                <svg></svg>
+                <h4></h4>
+            </div>
+            <p></p>
+        </article>
+    </section>
 </section>
 
 <style>
@@ -19,16 +74,27 @@
         background:#f5f5f5;
         border-radius: 2rem;
         box-shadow: 0 0 10px #222;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
     }
 
     @media screen and (max-width:1200px) {
         #responsabilities {
-            height:115vh;
+            height:auto;
+            padding:3vh 0 10vh;
+            background-position: right center;
         }
 
         .container {
-            width:75vw;
-            height:70vh;
+            width:85vw;
+            height:auto;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: unset;
+            flex-direction: column;
+            border-radius: 1rem;
         }
     }
 </style>
