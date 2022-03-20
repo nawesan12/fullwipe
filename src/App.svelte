@@ -13,12 +13,19 @@
   <Hero />
   <ContactBanner />
   <Services />
+  <Materials />
+  <Responsabilities />
+  <CV />
+  <Contact />
 </Layout>
 
 <style>
   :root {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    --primary: #5772ff;
+    --secondary: #a3c3ff;
   }
   
   :global(*) {
@@ -39,8 +46,3 @@
     text-decoration: none;
   }
 </style>
-
-
-<!--
-  rgb(87,114,255)
---> 

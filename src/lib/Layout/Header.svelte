@@ -65,6 +65,7 @@
         display:flex;
         justify-content:space-around;
         align-items:center;
+        box-shadow:0 0 10px var(--secondary);
     }
 
     /* DANGER */
@@ -95,7 +96,7 @@
         display: flex;
         align-items: center;
         font-size:1.3rem;
-        color:rgb(87, 114, 255);
+        color:var(--primary);
     }
 
     .number-logo {
@@ -119,7 +120,7 @@
         display:block;
         width:0;
         height:2px;
-        background-color:rgb(87, 114, 255);
+        background-color:var(--primary);
         transition:width .3s ease-in-out;
     }
 

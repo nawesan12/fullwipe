@@ -172,4 +172,38 @@
         background: rgb(87, 114, 255);
         color:#f5f5f5;
     }
+
+    @media screen and (max-width:1200px) {
+        #services {
+            height:auto;
+            width:100vw;
+            padding: 5vh 0;
+        }
+
+        header p {
+            max-width:90vw;
+        }
+
+        .services-container {
+            width:100vw;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .item {
+            margin:1rem auto;
+        }
+
+        .show-all-the-services {
+            padding: 1rem 2.8rem;
+        }
+
+        .description-overlay {
+            padding:0;
+        }
+
+        .description-overlay p {
+            padding:.3rem;
+        }
+    }
 </style>
