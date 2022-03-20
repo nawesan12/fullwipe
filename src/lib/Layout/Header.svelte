@@ -4,6 +4,10 @@
     function toggleNav() {
         navActive = !navActive;
     }
+
+    function closeNav() {
+        navActive = false;
+    }
 </script>
 
 <header class="app_header">
@@ -15,12 +19,12 @@
 
     <nav class={navActive === true ? "navigation active" : "navigation"}>
         <ul>
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#responsabilities">Responsabilidad</a></li>
-            <li><a href="#materials">Materiales</a></li>
-            <li><a href="#CV">CV</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#hero" on:click={closeNav}>Inicio</a></li>
+            <li><a href="#services" on:click={closeNav}>Servicios</a></li>
+            <li><a href="#responsabilities" on:click={closeNav}>Responsabilidad</a></li>
+            <li><a href="#materials" on:click={closeNav}>Materiales</a></li>
+            <li><a href="#CV" on:click={closeNav}>CV</a></li>
+            <li><a href="#contact" on:click={closeNav}>Contacto</a></li>
         </ul>
         <section class="phone-number">
             <span class="number-logo">

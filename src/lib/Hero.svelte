@@ -23,7 +23,7 @@
     position: relative;
     z-index:5;
     color:#000;
-    text-shadow: 0 0 2px rgb(87,114,255);
+    text-shadow: 0 0 2px var(--secondary);
     display:flex;
     align-items: center;
     justify-content: center;

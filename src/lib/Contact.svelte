@@ -19,7 +19,7 @@
 <style>
     #contact {
         background: url('/contact_bg.svg') no-repeat center center;
-        height:105vh;
+        height:100vh;
         max-width:100vw;
         display:flex;
         flex-direction: column;

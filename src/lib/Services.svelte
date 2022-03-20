@@ -13,7 +13,7 @@
     </header>
     <section class="services-container">
         <article class="item">
-            <img src="https://picsum.photos/400/400" alt="">
+            <img src="/images/oficina.jpg" alt="">
             <h2>Limpieza de Oficinas</h2>
             <div class={descriptionActive === true ? "description-overlay description-active" : "description-overlay"} on:mouseenter={toggleDescription} on:mouseleave={toggleDescription}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-skyscraper" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -30,7 +30,7 @@
             </div>
         </article>
         <article class="item">
-            <img src="https://picsum.photos/400/400" alt="">
+            <img src="/images/consorcio.jpg" alt="">
             <h2>Limpieza de Consorcios</h2>
             <div class={descriptionActive === true ? "description-overlay description-active" : "description-overlay"} on:mouseenter={toggleDescription} on:mouseleave={toggleDescription}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-community" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -46,7 +46,7 @@
             </div>
         </article>
         <article class="item">
-            <img src="https://picsum.photos/400/400" alt="">
+            <img src="/images/industria.avif" alt="">
             <h2>Limpieza de Industrias</h2>
             <div class={descriptionActive === true ? "description-overlay description-active" : "description-overlay"} on:mouseenter={toggleDescription} on:mouseleave={toggleDescription}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-factory" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -61,7 +61,7 @@
             </div>
         </article>
         <article class="item">
-            <img src="https://picsum.photos/400/400" alt="">
+            <img src="/images/comercio.jpg" alt="">
             <h2>Limpieza de Comercios</h2>
             <div class={descriptionActive === true ? "description-overlay description-active" : "description-overlay"} on:mouseenter={toggleDescription} on:mouseleave={toggleDescription}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -116,15 +116,16 @@
     }
 
     .item h2 {
-        font-size:1.5rem;
+        font-size:1.65rem;
         font-weight:600;
         color:#000;
-        background:#f5f5f5;
+        background:#fff;
         border-radius: .8rem;
     }
 
     .item img {
         width:100%;
+        height:17rem;
         object-fit: cover;
         border-radius: .5rem;
     }
