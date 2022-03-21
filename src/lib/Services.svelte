@@ -12,7 +12,7 @@
 <svelte:window bind:scrollY={y}/>
 
 <section id="services">
-    {#if y >= 600}
+    {#if y >= 450}
     <header>
         <h2>NUESTROS SERVICIOS</h2>
         <p>Full Wipe es la empresa líder en la realización de servicios de limpieza en los siguientes rubros</p>
