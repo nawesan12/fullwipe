@@ -7,7 +7,7 @@
 <svelte:window bind:scrollY={y} />
 
 <section class="hero">
-    <video class="hero-background" autoplay muted loop>
+    <video class="hero-background" autoplay muted>
         <source src="/hero-background.mp4" type="video/mp4">
         <track kind="captions"/>
     </video>
