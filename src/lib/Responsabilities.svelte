@@ -1,5 +1,14 @@
+<script>
+    import { fly } from "svelte/transition";
+
+    let y
+</script>
+
+<svelte:window bind:scrollY={y} />
+
 <section id="responsabilities">
-    <section class="container">
+    {#if y >= 2215}
+    <section class="container" transition:fly="{{ y: -100, duration: 1200 }}">
         <article class="item">
             <div class="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-atom" width="92" height="92" viewBox="0 0 24 24" stroke-width="1.5" stroke="#5772ff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -100,6 +109,7 @@
             <p>Cuidamos el medioambiente con productos de primera calidad.</p>
         </article>
     </section>
+    {/if}
 </section>
 
 <style>

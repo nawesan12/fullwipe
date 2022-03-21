@@ -1,21 +1,31 @@
+<script>
+    import { fly } from 'svelte/transition'
+
+    let y
+</script>
+
+<svelte:window bind:scrollY={y}/>
+
 <section id="materials">
-    <article class="modal">
+    {#if y >= 1372}
+    <article class="modal" transition:fly="{{ y: -100, duration: 1200 }}">
         <h3>Materiales</h3>
         <p>Todos nuestro productos respetan el medio ambiente ya que son de primera marca, no tóxicos, no corrosivos y biodegradables.
 
             Pese a la diversidad y especialización de los materiales con los que contamos mantenemos una inmensa responsabilidad con el medio ambiente por lo que operamos única y exclusivamente con productos no contaminables.</p>
     </article>
-    <article class="modal">
+    <article class="modal" transition:fly="{{ y: -100, duration: 1200 }}">
         <h3>Maquinaria</h3>
         <p>Full Wipe se encarga de proveer las máquinas que sean necesarios para realizar la prestación del servicio. Por razones operativas, deben quedar de modo permanente en el lugar de trabajo. Por este motivo, es importante que el cliente disponga de un lugar destinado a guardar las herramientas de limpieza.</p>
     </article>
+    {/if}
 </section>
 
 <style>
     #materials {
         height:105vh;
         width:100vw;
-        background: url('/materials_bg.svg') no-repeat top center;
+        background: url('/materials_bg.png') no-repeat top center;
         border-top: 2px solid var(--primary);
         border-bottom: 5px solid var(--primary);
         display:flex;

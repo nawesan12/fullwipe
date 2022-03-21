@@ -1,21 +1,30 @@
+<script>
+  import { fly } from "svelte/transition"
+
+  let y
+</script>
+
+<svelte:window bind:scrollY={y} />
+
 <section class="hero">
     <video class="hero-background" autoplay muted loop>
         <source src="/hero-background.mp4" type="video/mp4">
         <track kind="captions"/>
     </video>
 
+    {#if y >= 0}
     <div class="hero-title">
-        <img src="/images/wipe.png" alt="Logo de Full Wipe">
-        <h1>Full Wipe</h1>
-        <h2>Limpieza Integral y Mantenimiento</h2>
+        <img src="/images/wipe.png" alt="Logo de Full Wipe" transition:fly="{{ x: -200, duration: 1200 }}">
+        <h1 transition:fly="{{ x: 200, duration: 1000 }}">Full Wipe</h1>
+        <h2 transition:fly="{{ y: 200, duration: 1000 }}">Limpieza Integral y Mantenimiento</h2>
     </div>
+    {/if}
 </section>
 
 <style>
   .hero {
     max-width:100vw;
     max-height:90vh;
-    background-color: #333;
   }
 
   .hero-title {
@@ -23,7 +32,7 @@
     position: relative;
     z-index:5;
     color:#000;
-    text-shadow: 0 0 2px var(--secondary);
+    text-shadow: 0 0 4px var(--secondary);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +60,7 @@
     min-height:92vh;
     width:100vw;
     object-fit: cover;
-    filter: brightness(0.8);
+    filter: brightness(1);
   }
 
   @media screen and (max-width:1200px) {

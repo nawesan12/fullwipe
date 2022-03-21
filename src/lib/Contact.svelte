@@ -1,24 +1,34 @@
+<script>
+    import { fly } from "svelte/transition";
+
+    let y
+</script>
+
+<svelte:window bind:scrollY={y} />
+
 <section id="contact">
+    {#if y >= 3320}
     <section class="logo-and-social">
-        <img src="/images/wipe.png" alt="Logo">
-        <ul class="social-list">
+        <img src="/images/wipe.png" alt="Logo" transition:fly="{{ x: -300, duration: 1200 }}">
+        <ul class="social-list" transition:fly="{{ x: 300, duration: 1200 }}">
             <li><a href="callto:+542235929292"><span>Whatsapp:</span> 223 5 929292</a></li>
             <li><a href="https://facebook.com"><span>Facebook:</span> Full Wipe</a></li>
             <li><a href="mailto:fullwipe@gmail.com"><span>Email:</span> fullwipe@gmail.com</a></li>
         </ul>
     </section>
-    <section class="form-grid">
+    <section class="form-grid" transition:fly="{{ y: 300, duration: 1200 }}">
         <input type="text" class="name" placeholder="Nombre"/>
         <input type="text" class="email" placeholder="Email"/>
         <input type="text" class="phone" placeholder="Telefono"/>
         <textarea placeholder="Mensaje"></textarea>
     </section>
+    {/if}
     <button class="submit_button">Enviar</button>
 </section>
 
 <style>
     #contact {
-        background: url('/contact_bg.svg') no-repeat center center;
+        background: url('/contact_bg.png') no-repeat center center;
         height:100vh;
         max-width:100vw;
         display:flex;

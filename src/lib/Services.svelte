@@ -1,17 +1,23 @@
 <script>
-    let descriptionActive = false;
+    import { fly } from "svelte/transition"
+
+    let descriptionActive = false
+    let y;
 
     const toggleDescription = () => {
-        descriptionActive = !descriptionActive;
-    };
+        descriptionActive = !descriptionActive
+    }
 </script>
 
+<svelte:window bind:scrollY={y}/>
+
 <section id="services">
+    {#if y >= 600}
     <header>
         <h2>NUESTROS SERVICIOS</h2>
         <p>Full Wipe es la empresa líder en la realización de servicios de limpieza en los siguientes rubros</p>
     </header>
-    <section class="services-container">
+    <section class="services-container" transition:fly="{{ y: -100, duration: 1200 }}">
         <article class="item">
             <img src="/images/oficina.jpg" alt="">
             <h2>Limpieza de Oficinas</h2>
@@ -78,13 +84,14 @@
     </section>
 
     <button class="show-all-the-services">Ver todos los servicios</button>
+    {/if}
 </section>
 
 <style>
     #services {
         height:105vh;
         max-width:100vw;
-        background: url('/background_lines.svg') no-repeat center center fixed;
+        background: url('/background_lines.png') no-repeat center center fixed;
         display:flex;
         flex-direction: column;
         align-items: center;

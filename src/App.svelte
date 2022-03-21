@@ -45,4 +45,20 @@
     color: #000;
     text-decoration: none;
   }
+
+  :global(::-webkit-scrollbar) {
+    width: 10px;
+  }
+
+  :global(::-webkit-scrollbar-track) {
+    background: var(--secondary);
+  }
+
+  :global(::-webkit-scrollbar-thumb) {
+    background: var(--primary);
+  }
+
+  :global(::-webkit-scrollbar-thumb:hover) {
+    background:#5773ffb7;
+  }
 </style>
