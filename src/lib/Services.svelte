@@ -19,7 +19,7 @@
     </header>
     <section class="services-container" transition:fly="{{ y: -100, duration: 1200 }}">
         <article class="item">
-            <img src="/images/oficina.jpg" alt="">
+            <img src="/images/oficina.webp" alt="">
             <h2>Limpieza de Oficinas</h2>
             <div class={descriptionActive === true ? "description-overlay description-active" : "description-overlay"} on:mouseenter={toggleDescription} on:mouseleave={toggleDescription}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-skyscraper" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -36,7 +36,7 @@
             </div>
         </article>
         <article class="item">
-            <img src="/images/consorcio.jpg" alt="">
+            <img src="/images/consorcio.webp" alt="">
             <h2>Limpieza de Consorcios</h2>
             <div class={descriptionActive === true ? "description-overlay description-active" : "description-overlay"} on:mouseenter={toggleDescription} on:mouseleave={toggleDescription}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-community" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -67,7 +67,7 @@
             </div>
         </article>
         <article class="item">
-            <img src="/images/comercio.jpg" alt="">
+            <img src="/images/comercio.webp" alt="">
             <h2>Limpieza de Comercios</h2>
             <div class={descriptionActive === true ? "description-overlay description-active" : "description-overlay"} on:mouseenter={toggleDescription} on:mouseleave={toggleDescription}>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">

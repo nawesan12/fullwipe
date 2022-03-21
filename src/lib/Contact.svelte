@@ -9,7 +9,7 @@
 <section id="contact">
     {#if y >= 3320}
     <section class="logo-and-social">
-        <img src="/images/wipe.png" alt="Logo" transition:fly="{{ x: -300, duration: 1200 }}">
+        <img src="/images/wipe.webp" alt="Logo" transition:fly="{{ x: -300, duration: 1200 }}">
         <ul class="social-list" transition:fly="{{ x: 300, duration: 1200 }}">
             <li><a href="callto:+542235929292"><span>Whatsapp:</span> 223 5 929292</a></li>
             <li><a href="https://facebook.com"><span>Facebook:</span> Full Wipe</a></li>
