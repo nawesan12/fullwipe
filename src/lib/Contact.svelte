@@ -7,7 +7,7 @@
 <svelte:window bind:scrollY={y} />
 
 <section id="contact">
-    {#if y >= 3320}
+    {#if y >= 2200}
     <section class="logo-and-social">
         <img src="/images/wipe.webp" alt="Logo" transition:fly="{{ x: -300, duration: 1200 }}">
         <ul class="social-list" transition:fly="{{ x: 300, duration: 1200 }}">

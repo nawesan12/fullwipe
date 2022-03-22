@@ -64,7 +64,7 @@
 
     .app_header {
         max-width:100vw;
-        height:12vh;
+        height:14vh;
         background-color: #f5f5f5;
         display:flex;
         justify-content:space-around;
@@ -79,9 +79,9 @@
         background:#000;
         color:#fff;
         top:0;
-        height:15vh;
+        height:16.5vh;
         z-index:10;
-        padding:1rem 2rem 0;
+        padding:1rem 2rem;
         display:grid;
         place-items: center;
         text-align: center;

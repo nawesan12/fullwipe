@@ -89,7 +89,7 @@
 
 <style>
     #services {
-        height:105vh;
+        min-height:105vh;
         max-width:100vw;
         background: url('/background_lines.png') no-repeat center center fixed;
         display:flex;
@@ -113,7 +113,7 @@
     }
 
     .item {
-        width:20rem;
+        min-width:20vw;
         height:45vh;
         text-align: center;
         display:flex;
@@ -199,6 +199,7 @@
         }
 
         .item {
+            width:88vw;
             margin:1rem auto;
         }
 
