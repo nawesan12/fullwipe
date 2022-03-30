@@ -37,7 +37,6 @@
         width:30%;
         height:40%;
         background: var(--secondary);
-        color: #f5f5f5;
         font-weight: 500;
         display:flex;
         flex-direction: column;
@@ -46,6 +45,7 @@
         padding: 4rem;
         border-radius: 1rem;
         border:2px solid var(--primary);
+        color: #CCC;
     }
 
     h3 {
