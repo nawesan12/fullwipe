@@ -98,6 +98,10 @@
         justify-content: space-evenly;
         text-align: center;
     }
+    
+    header {
+        color: var(--primary);
+    }
 
     header h2 {
         font-size:2rem;
