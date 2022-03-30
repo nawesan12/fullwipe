@@ -12,7 +12,7 @@
         z-index:10;
         position:relative;
         background: var(--primary);
-        color:#f5f5f5;
+        color:#ccc;
         text-align: center;
         padding: 2rem 0;
     }
