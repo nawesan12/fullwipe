@@ -35,7 +35,7 @@
                     <line x1="12" y1="17" x2="12" y2="17.01" />
                 </svg>
             </span>
-            <p class="number">223 5 929292</p>
+            <p class="number">223 4 246659</p>
         </section>
     </nav>
 
