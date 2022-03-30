@@ -45,7 +45,7 @@
         padding: 4rem;
         border-radius: 1rem;
         border:2px solid var(--primary);
-        color: #CCC;
+        color: #333;
     }
 
     h3 {
