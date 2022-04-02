@@ -7,13 +7,15 @@
 <svelte:window bind:scrollY={y} />
 
 <section id="contact">
-    {#if y >= 3320}
+    {#if y >= 2200}
     <section class="logo-and-social">
         <img src="/images/wipe.webp" alt="Logo" transition:fly="{{ x: -300, duration: 1200 }}">
         <ul class="social-list" transition:fly="{{ x: 300, duration: 1200 }}">
-            <li><a href="callto:+542235929292"><span>Whatsapp:</span> 223 5 929292</a></li>
-            <li><a href="https://facebook.com"><span>Facebook:</span> Full Wipe</a></li>
-            <li><a href="mailto:fullwipe@gmail.com"><span>Email:</span> fullwipe@gmail.com</a></li>
+            <li><a href="callto:+542234246659"><span>Whatsapp: </span> 223 4 246659</a></li>
+            <li><a href="https://facebook.com"><span>Facebook: </span> Full Wipe</a></li>
+            <li><a href="mailto:fullwipemdq@gmail.com"><span>Email: </span> fullwipemdq@gmail.com</a></li>
+            <li><a href="https://www.instagram.com/fullwipemdq"><span>Instagram: </span> @fullwipemdq</a></li>
+            <li><a href="https://linkedin.com/in/fullwipemdq"><span>Linkedin: </span> /fullwipemdq</a></li>
         </ul>
     </section>
     <section class="form-grid" transition:fly="{{ y: 300, duration: 1200 }}">

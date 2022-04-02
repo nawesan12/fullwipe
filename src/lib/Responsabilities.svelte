@@ -7,7 +7,7 @@
 <svelte:window bind:scrollY={y} />
 
 <section id="responsabilities">
-    {#if y >= 2215}
+    {#if y >= 1830}
     <section class="container" transition:fly="{{ y: -100, duration: 1200 }}">
         <article class="item">
             <div class="logo">
@@ -114,7 +114,7 @@
 
 <style>
     #responsabilities {
-        height:105vh;
+        min-height:105vh;
         width:100vw;
         background: url('/clouds.svg') repeat bottom center;
         display:grid;
@@ -123,7 +123,7 @@
 
     .container {
         width:75vw;
-        height:70vh;
+        height:78vh;
         background:#f5f5f5;
         border-radius: 2rem;
         box-shadow: 0 0 10px #222;
@@ -131,17 +131,18 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
-        gap: 1rem;
-        padding: 1rem 0;
+        gap: 1rem 1rem 0;
+        padding: .5rem 0;
     }
 
     .item {
         text-align: center;
-        width:20%;
+        width:22%;
+        height:49%;
         cursor:pointer;
         border-radius: 1rem;
         transition: all .2s ease;
-        padding:1rem 0;
+        padding:.2rem 0;
         border:2px solid transparent;
 
     }
@@ -157,7 +158,7 @@
     }
 
     p {
-        max-width:70%;
+        max-width:80%;
         margin:auto;
     }
 
@@ -184,6 +185,8 @@
             width:auto;
             background:#fff;
             padding:1rem 0;
+            gap:1rem;
+            margin:1rem 0;
             border-radius: .5rem;
             border:1px solid var(--primary);
         }

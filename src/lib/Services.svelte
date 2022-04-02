@@ -12,7 +12,7 @@
 <svelte:window bind:scrollY={y}/>
 
 <section id="services">
-    {#if y >= 600}
+    {#if y >= 450}
     <header>
         <h2>NUESTROS SERVICIOS</h2>
         <p>Full Wipe es la empresa líder en la realización de servicios de limpieza en los siguientes rubros</p>
@@ -89,7 +89,7 @@
 
 <style>
     #services {
-        height:105vh;
+        min-height:105vh;
         max-width:100vw;
         background: url('/background_lines.png') no-repeat center center fixed;
         display:flex;
@@ -97,6 +97,10 @@
         align-items: center;
         justify-content: space-evenly;
         text-align: center;
+    }
+    
+    header {
+        color: var(--primary);
     }
 
     header h2 {
@@ -113,7 +117,7 @@
     }
 
     .item {
-        width:20rem;
+        min-width:20vw;
         height:45vh;
         text-align: center;
         display:flex;
@@ -199,6 +203,7 @@
         }
 
         .item {
+            width:88vw;
             margin:1rem auto;
         }
 

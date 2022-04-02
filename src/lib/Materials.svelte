@@ -7,7 +7,7 @@
 <svelte:window bind:scrollY={y}/>
 
 <section id="materials">
-    {#if y >= 1372}
+    {#if y >= 1280}
     <article class="modal" transition:fly="{{ y: -100, duration: 1200 }}">
         <h3>Materiales</h3>
         <p>Todos nuestro productos respetan el medio ambiente ya que son de primera marca, no tóxicos, no corrosivos y biodegradables.
@@ -37,7 +37,6 @@
         width:30%;
         height:40%;
         background: var(--secondary);
-        color: #f5f5f5;
         font-weight: 500;
         display:flex;
         flex-direction: column;
@@ -46,6 +45,7 @@
         padding: 4rem;
         border-radius: 1rem;
         border:2px solid var(--primary);
+        color: #333;
     }
 
     h3 {
