@@ -14,7 +14,7 @@
 
     {#if y >= 0}
     <div class="hero-title">
-        <img src="/images/wipe.webp" alt="Logo de Full Wipe" transition:fly="{{ x: -200, duration: 1200 }}">
+        <img src="/images/logo.png" alt="Logo de Full Wipe" transition:fly="{{ x: -200, duration: 1200 }}">
         <h1 transition:fly="{{ x: 200, duration: 1000 }}">Full Wipe</h1>
         <h2 transition:fly="{{ y: 200, duration: 1000 }}">Limpieza Integral y Mantenimiento</h2>
     </div>

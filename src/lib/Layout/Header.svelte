@@ -12,9 +12,7 @@
 
 <header class="app_header">
     <section class="logo">
-        <div class="content">
-            <span>Full <br> Wipe</span>
-        </div>
+            <img src="/images/logo.png" alt="">
     </section>
 
     <nav class={navActive === true ? "navigation active" : "navigation"}>
@@ -74,20 +72,8 @@
 
     /* DANGER */
 
-    .content {
-        position: absolute;
-        background:#000;
-        color:#fff;
-        top:0;
-        height:16.5vh;
-        z-index:10;
-        padding:1rem 2rem;
-        display:grid;
-        place-items: center;
-        text-align: center;
-        font-size: 1.7rem;
-        font-weight: bold;
-        line-height: 2.7rem;
+    img {
+        height: 20vh;
     }
 
     /* DANGER */
